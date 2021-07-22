@@ -1,0 +1,13 @@
+apply plugin: 'groovy'
+
+targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.2.1'
+    implementation 'org.aspectj:aspectjtools:1.8.9'
+}
+
+apply from: "../gradle-mvn-push-java.gradle"

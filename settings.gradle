@@ -1,0 +1,3 @@
+rootProject.name = "aspect4a"
+include ':app'
+include ':plugin'
