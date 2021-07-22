@@ -8,3 +8,27 @@ aop for android
 
 
 已上传mavenCentral， 引用方便
+
+使用
+1 
+```
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.1"
+        classpath 'io.github.hotstu.aspect4a:plugin:1.0.0'
+    }
+}
+
+```
+2 make your own inject rules(see demo)
+
+3 apply plugin in app:
+
+```
+apply plugin: 'com.android.application'
+apply plugin: 'io.github.hotstu.aspect4a.plugin'
+```
